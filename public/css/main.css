@@ -1,0 +1,1338 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One|Kodchasan|Raleway|Gruppo|Averia+Libre|NTR|Delius|Special+Elite");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  cursor: default;
+  text-align: center;
+}
+
+html {
+  padding: 0;
+  height: 100%;
+  background-color: #f0f0f0;
+  opacity: 1;
+}
+
+#loader {
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 50;
+}
+
+.container {
+  background: #7993b4;
+  width: 100%;
+  max-width: 1480px;
+  min-height: 100vh;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-left: 1px solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+h2 {
+  margin: 1.5rem 0;
+  letter-spacing: 0.5px;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  color: #1a232e;
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+}
+
+h4 {
+  color: #cfcece;
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  padding: 0;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 2.75rem;
+  letter-spacing: 1px;
+  color: #cfcece;
+  margin: 1.5rem 0;
+}
+
+h6 {
+  color: #232f3e;
+  font-family: "Special Elite", "Averia Libre", "NTR", "Gruppo", "Delius", "Century Gothic";
+  font-weight: 900;
+  font-style: oblique;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h2, h3 {
+  font-family: "Special Elite", "Averia Libre", "NTR", "Gruppo", "Delius", "Century Gothic";
+}
+
+h4, h5 {
+  font-family: "Special Elite", "Averia Libre", "NTR", "Gruppo", "Delius", "Century Gothic";
+}
+
+p {
+  color: #333333;
+  color: white;
+  font-family: "Raleway", "Century Gothic";
+  font-weight: 100;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+ul {
+  list-style-type: none;
+  display: contents;
+  position: relative;
+  left: 0;
+}
+
+ul > li {
+  padding: 0;
+  margin-top: -10px;
+  color: #333333;
+  font-family: "Raleway", "Century Gothic";
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(53, 72, 95, 0.75);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.05));
+  border-bottom: 1px solid #d7d7d7;
+}
+
+#header #title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 10px;
+  font-family: "Concert One", "Century Gothic";
+  font-weight: 400;
+  text-shadow: -2px 3px 5px #333333;
+  color: #111;
+  width: 100%;
+  opacity: 0.85;
+}
+
+#header #subtitle {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Special Elite", "Averia Libre", "NTR", "Gruppo", "Delius", "Century Gothic";
+  color: #666;
+}
+
+#header .logo-left {
+  position: absolute;
+  left: 0;
+  display: block;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+#header .logo-right {
+  position: absolute;
+  right: 0;
+  display: block;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#intro {
+  position: relative;
+  top: 0;
+  left: 300px;
+  width: calc(100% - 330px);
+  margin: 15px;
+}
+
+#intro-text {
+  padding: 1.5rem;
+  position: relative;
+  text-align: justify;
+  z-index: 1;
+}
+
+#intro .brand {
+  color: #232f3e;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+#intro > div#awards {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#intro > div#awards > img {
+  height: 288px;
+  width: 345px;
+}
+
+#company-details {
+  position: relative;
+  top: 25px;
+  width: calc(100% - 300px);
+  left: 300px;
+  margin: 0 0 2rem 0;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  background: white;
+}
+
+#company-details #moto {
+  font-family: "Special Elite", "Averia Libre", "NTR", "Gruppo", "Delius", "Century Gothic";
+  color: #333333;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+#company-details > div#details {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#company-details > div#details > img {
+  height: 130px;
+  padding: 0 30px 30px 30px;
+}
+
+#company-details #5-star {
+  width: 220px;
+}
+
+#company-details #AA {
+  width: 200px;
+}
+
+#company-details #trust-pilot {
+  width: 225px;
+}
+
+#company-details #dealer-power {
+  width: 160px;
+}
+
+#company-details #defaqto {
+  width: 220px;
+}
+
+#filters {
+  background: #6986aa;
+  -webkit-box-shadow: inset 0 0 0 -10px rgba(204, 204, 204, 0.65), inset -5px 0 7.5px -2px rgba(204, 204, 204, 0.65), inset 0 0 0 -10px rgba(204, 204, 204, 0.65), inset 0 0 0 -10px rgba(204, 204, 204, 0.65);
+          box-shadow: inset 0 0 0 -10px rgba(204, 204, 204, 0.65), inset -5px 0 7.5px -2px rgba(204, 204, 204, 0.65), inset 0 0 0 -10px rgba(204, 204, 204, 0.65), inset 0 0 0 -10px rgba(204, 204, 204, 0.65);
+  padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: calc(100% - 235px);
+  z-index: 10;
+}
+
+#filters #results {
+  height: 50px;
+}
+
+#filters h3 {
+  font-family: "Raleway", "Century Gothic";
+}
+
+#filters span {
+  font-size: 1.6rem;
+}
+
+#filters .filter {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0.15rem 1rem 0.15rem 1rem;
+  margin: 0.5rem 0;
+  width: 95%;
+}
+
+#filters .filter-title {
+  color: #333333;
+  color: #1a232e;
+  font-family: "Raleway", "Century Gothic";
+  font-size: 0.85rem;
+  font-weight: 800;
+  font-style: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+#filters .filter form {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#filters .filter form .counts {
+  color: #AAA;
+}
+
+#filters .filter form select {
+  font-family: "Raleway", "Century Gothic";
+  font-size: 0.8rem;
+  margin: 0 0 5px 0;
+  width: 100%;
+  height: 28px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  background-color: white;
+  border: 2px inset #e4e4e4;
+  color: black;
+}
+
+#filters .filter form select:hover {
+  cursor: pointer;
+}
+
+#filters .filter form #selected-option {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 28px;
+  background-color: white;
+  border: 2px inset #e4e4e4;
+  color: black;
+}
+
+#filters .filter form #selected-option > span {
+  font-family: "Raleway", "Century Gothic";
+  font-size: 0.8rem;
+  position: absolute;
+  left: 1.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#filters .filter form #selected-option #remove-selected {
+  position: absolute;
+  right: 1.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+
+#filters .filter form #selected-option #remove-selected > img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#filters .filter form #selected-option #remove-selected > img:hover {
+  cursor: pointer;
+}
+
+#filters .form-btn, #filters #reset {
+  font-family: "Raleway", "Century Gothic";
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: #999;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.05));
+  border: 2px outset white;
+  border-radius: 5px;
+  color: #333333;
+  -webkit-box-shadow: 0 7px 15px -10px rgba(204, 204, 204, 0.65);
+          box-shadow: 0 7px 15px -10px rgba(204, 204, 204, 0.65);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+#filters .form-btn:active, #filters #reset:active, #filters .form-btn:hover, #filters #reset:hover {
+  -webkit-box-shadow: 0 10px 15px -10px rgba(25, 25, 25, 0.95);
+          box-shadow: 0 10px 15px -10px rgba(25, 25, 25, 0.95);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+#filters #reset {
+  position: relative;
+  left: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.65rem 0.85rem;
+}
+
+#filters #reset:active, #filters #reset:hover {
+  padding: 0.65rem;
+}
+
+#filters #width-val {
+  display: none;
+}
+
+#filters .filters-close-btn {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 95%;
+  font-family: "Kodchasan", "Century Gothic";
+  font-size: 1.1rem;
+  font-weight: 500;
+  -webkit-box-shadow: 0 7px 15px -10px rgba(204, 204, 204, 0.65);
+          box-shadow: 0 7px 15px -10px rgba(204, 204, 204, 0.65);
+  background: #1a232e;
+  border: 2.3px outset white;
+  border-radius: 10px;
+  color: white;
+  padding: 1.25rem 2rem;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+#filters .filters-close-btn:active, #filters .filters-close-btn:hover {
+  -webkit-box-shadow: 0 10px 15px -10px rgba(25, 25, 25, 0.95);
+          box-shadow: 0 10px 15px -10px rgba(25, 25, 25, 0.95);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+  width: 94%;
+}
+
+div.filters-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.filters-open-btn {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform: translate(-40%, -50%) rotate(-90deg);
+          transform: translate(-40%, -50%) rotate(-90deg);
+  z-index: 20;
+  width: 250px;
+  height: 100px;
+  padding: 0;
+  font-family: "Kodchasan", "Century Gothic";
+  font-size: 1.1rem;
+  font-weight: 600;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(30, 30, 30, 0.9);
+          box-shadow: 0 10px 10px -10px rgba(30, 30, 30, 0.9);
+  background: #1a232e;
+  border: 2.3px outset white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.filters-open-btn:hover, .filters-open-btn:active {
+  cursor: pointer;
+}
+
+.filters-open-btn span {
+  position: absolute;
+  top: 50%;
+  left: 32.5%;
+}
+
+.filters-open-btn span:hover, .filters-open-btn span:active {
+  cursor: pointer;
+}
+
+.filters-open-btn #magnify {
+  margin-right: 20px;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+
+.filters-open-btn #magnify:hover, .filters-open-btn #magnify:active {
+  cursor: pointer;
+}
+
+#vehicles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  position: relative;
+  top: 60px;
+  left: 300px;
+  width: calc(100% - 300px);
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#vehicles #zero-results-returned {
+  position: relative;
+  width: 100%;
+  left: 50%;
+}
+
+#vehicles #zero-results-returned #sad-face {
+  width: 450px;
+  height: 450px;
+}
+
+#vehicles #zero-results-returned-text {
+  font-family: "Raleway", "Century Gothic";
+  color: #555555;
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+}
+
+#vehicles .vehicle-card {
+  background-color: #6986aa;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  -webkit-box-shadow: 0 10px 10px -10px #111;
+          box-shadow: 0 10px 10px -10px #111;
+  -webkit-transition: background-color, -webkit-box-shadow;
+  transition: background-color, -webkit-box-shadow;
+  transition: background-color, box-shadow;
+  transition: background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  position: relative;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#vehicles .vehicle-card:hover, #vehicles .vehicle-card:active {
+  -webkit-box-shadow: 0 20px 10px -10px #111;
+          box-shadow: 0 20px 10px -10px #111;
+  background: #212d3b;
+  -webkit-transition: background-color, -webkit-box-shadow;
+  transition: background-color, -webkit-box-shadow;
+  transition: background-color, box-shadow;
+  transition: background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  cursor: pointer;
+}
+
+#vehicles .vehicle-card:hover h4, #vehicles .vehicle-card:hover h5, #vehicles .vehicle-card:active h4, #vehicles .vehicle-card:active h5 {
+  color: #48607f;
+}
+
+#vehicles .vehicle-card:hover h6, #vehicles .vehicle-card:active h6 {
+  color: #6986aa;
+}
+
+#vehicles .vehicle-card:hover li, #vehicles .vehicle-card:active li {
+  color: white;
+}
+
+#vehicles .vehicle-card:hover span, #vehicles .vehicle-card:active span {
+  color: #666666;
+}
+
+#vehicles .vehicle-card li {
+  color: #666666;
+  color: white;
+}
+
+#vehicles .vehicle-card h4 {
+  color: #333333;
+}
+
+#vehicles .vehicle-card h5 {
+  font-size: 2.1rem;
+  color: #333333;
+}
+
+#vehicles .vehicle-card h6 {
+  font-family: "Special Elite", "Averia Libre", "NTR", "Gruppo", "Delius", "Century Gothic";
+  font-size: 1.75rem;
+  padding: 0 2.5rem;
+}
+
+#vehicles .vehicle-card h4, #vehicles .vehicle-card h5, #vehicles .vehicle-card li, #vehicles .vehicle-card span {
+  font-family: "Raleway", "Century Gothic";
+  padding: 0 0.25rem;
+}
+
+#vehicles .vehicle-card h4:hover, #vehicles .vehicle-card h5:hover, #vehicles .vehicle-card li:hover, #vehicles .vehicle-card span:hover {
+  cursor: pointer;
+}
+
+#vehicles .vehicle-card span {
+  color: black;
+}
+
+#vehicles .vehicle-card #cars {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#vehicles .vehicle-card #cars:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+#vehicles .vehicle-card #slider {
+  overflow: hidden;
+  border-radius: 7.5px;
+}
+
+#vehicles .vehicle-card #slider figure img {
+  width: 20%;
+  float: left;
+  z-index: 10;
+}
+
+#vehicles .vehicle-card #slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+#vehicles .vehicle-card .run-animation {
+  -webkit-animation: 60s slider linear infinite;
+          animation: 60s slider linear infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+#outro {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  width: calc(100% - 330px);
+  margin: 15px;
+}
+
+#outro-text {
+  padding: 1.5rem;
+  position: relative;
+  text-align: justify;
+  z-index: 1;
+}
+
+#footer {
+  padding: 1rem 1.5rem;
+  position: relative;
+  margin-top: 7.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(53, 72, 95, 0.75);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.05));
+  border-top: 1px solid #d7d7d7;
+  height: 60px;
+  z-index: 1;
+}
+
+#footer > span {
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Kodchasan", "Century Gothic";
+}
+
+#footer #social-icons {
+  position: absolute;
+  right: 2.5%;
+}
+
+#footer #social-icons a {
+  color: black;
+}
+
+#footer #social-icons a:hover {
+  cursor: pointer;
+}
+
+#footer #social-icons svg {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  margin-top: -7px;
+}
+
+#footer #social-icons svg:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  #header {
+    height: 175px;
+  }
+  #header #title {
+    top: -100px;
+    font-size: 8rem;
+  }
+  #header #subtitle {
+    top: 64%;
+    font-size: 1.5rem;
+  }
+  #header .logo-left {
+    width: 200px;
+    top: -25px;
+  }
+  #header .logo-right {
+    width: 200px;
+    top: -25px;
+  }
+  #filters {
+    top: 175px;
+  }
+  #filters .filters-close-btn {
+    display: none;
+  }
+  div.filters-open {
+    display: none;
+  }
+  .filters-open-btn {
+    display: none;
+  }
+  #vehicles .vehicle-card #cars {
+    height: 315px;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+  #header {
+    height: 175px;
+  }
+  #header #title {
+    top: -70px;
+    font-size: 6.5rem;
+  }
+  #header #subtitle {
+    top: 62%;
+    font-size: 1.4rem;
+  }
+  #header .logo-left {
+    width: 175px;
+    top: -10px;
+  }
+  #header .logo-right {
+    width: 175px;
+    top: -10px;
+  }
+  #filters {
+    top: 175px;
+  }
+  #filters .filters-close-btn {
+    display: none;
+  }
+  div.filters-open {
+    display: none;
+  }
+  .filters-open-btn {
+    display: none;
+  }
+  #vehicles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #vehicles #zero-results-returned {
+    left: 0;
+  }
+  #vehicles #zero-results-returned #sad-face {
+    width: 300px;
+    height: 300px;
+  }
+  #vehicles #zero-results-returned-text {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+  }
+  #vehicles .vehicle-card {
+    width: 70%;
+  }
+  #vehicles .vehicle-card #cars {
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  #header {
+    height: 150px;
+  }
+  #header #title {
+    top: -40px;
+    font-size: 4.5rem;
+  }
+  #header #subtitle {
+    top: 50%;
+    font-size: 1.4rem;
+  }
+  #header .logo-left {
+    width: 160px;
+    top: -10px;
+  }
+  #header .logo-right {
+    width: 160px;
+    top: -10px;
+  }
+  #filters {
+    top: 150px;
+    height: calc(100% - 300px);
+  }
+  #filters .filters-close-btn {
+    display: none;
+  }
+  div.filters-open {
+    display: none;
+  }
+  .filters-open-btn {
+    display: none;
+  }
+  #vehicles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #vehicles #zero-results-returned {
+    left: 0;
+  }
+  #vehicles #zero-results-returned #sad-face {
+    width: 300px;
+    height: 300px;
+  }
+  #vehicles #zero-results-returned-text {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 2rem;
+    padding: 1.5rem 0;
+  }
+  #vehicles .vehicle-card {
+    width: 90%;
+  }
+  #vehicles .vehicle-card #cars {
+    height: 330px;
+  }
+  #footer {
+    height: 150px;
+  }
+  #footer > span {
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #footer #social-icons {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  #header {
+    height: 150px;
+  }
+  #header #title {
+    top: -10px;
+    font-size: 2.75rem;
+  }
+  #header #subtitle {
+    top: 40%;
+    font-size: 1.3rem;
+  }
+  #header .logo-left {
+    width: 120px;
+    top: 5px;
+  }
+  #header .logo-right {
+    width: 120px;
+    top: 5px;
+  }
+  #filters {
+    width: 100%;
+    max-width: 750px;
+    min-width: 501px;
+    top: 150px;
+    height: calc(100% - 300px);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.65s ease-out;
+    transition: -webkit-transform 0.65s ease-out;
+    transition: transform 0.65s ease-out;
+    transition: transform 0.65s ease-out, -webkit-transform 0.65s ease-out;
+  }
+  #filters .filters-close-btn {
+    display: inline-block;
+  }
+  div.filters-open {
+    display: inline-block;
+  }
+  .filters-open-btn {
+    display: inline-block;
+  }
+  #intro {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #company-details {
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #vehicles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 85%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #vehicles #zero-results-returned {
+    left: 0;
+  }
+  #vehicles #zero-results-returned #sad-face {
+    width: 300px;
+    height: 300px;
+  }
+  #vehicles #zero-results-returned-text {
+    position: relative;
+    width: 75%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    margin-bottom: 30%;
+  }
+  #vehicles .vehicle-card {
+    width: 100%;
+  }
+  #vehicles .vehicle-card #cars {
+    height: 330px;
+  }
+  #outro {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #footer {
+    height: 150px;
+    z-index: 1;
+  }
+  #footer > span {
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #footer #social-icons {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 356px) and (max-width: 500px) {
+  #header {
+    height: 150px;
+  }
+  #header #title {
+    top: 30px;
+    font-size: 2.7rem;
+  }
+  #header #subtitle {
+    top: 64.5%;
+    font-size: 1.05rem;
+    width: 100%;
+  }
+  #header .logo-left {
+    width: 120px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  #header .logo-right {
+    display: none;
+  }
+  #filters {
+    width: 100%;
+    max-width: 500px;
+    min-width: 356px;
+    top: 150px;
+    height: calc(100% - 300px);
+    z-index: 10;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.65s ease-out;
+    transition: -webkit-transform 0.65s ease-out;
+    transition: transform 0.65s ease-out;
+    transition: transform 0.65s ease-out, -webkit-transform 0.65s ease-out;
+  }
+  #filters .filters-close-btn {
+    display: inline-block;
+  }
+  div.filters-open {
+    display: inline-block;
+  }
+  .filters-open-btn {
+    display: inline-block;
+  }
+  #intro {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #intro-text {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  #company-details {
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #vehicles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #vehicles #zero-results-returned {
+    left: 0;
+  }
+  #vehicles #zero-results-returned #sad-face {
+    width: 250px;
+    height: 250px;
+  }
+  #vehicles #zero-results-returned-text {
+    position: relative;
+    width: 75%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+    margin-bottom: 45%;
+  }
+  #vehicles .vehicle-card {
+    width: 100%;
+  }
+  #vehicles .vehicle-card #cars {
+    height: 250px;
+  }
+  #vehicles .vehicle-card h4 {
+    font-size: 1.6rem;
+  }
+  #vehicles .vehicle-card h5 {
+    font-size: 2rem;
+  }
+  #vehicles .vehicle-card h6 {
+    font-size: 1.7rem;
+  }
+  #vehicles .vehicle-card ul > li {
+    font-size: 0.9rem;
+  }
+  #outro {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #outro-text {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  #footer {
+    height: 150px;
+  }
+  #footer > span {
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #footer #social-icons {
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 10px;
+    width: 100%;
+  }
+  #footer #social-icons svg {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  #header {
+    height: 150px;
+  }
+  #header #title {
+    top: 20px;
+    font-size: 2.7rem;
+  }
+  #header #subtitle {
+    top: 57%;
+    font-size: 1.05rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  #header .logo-left {
+    width: 110px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  #header .logo-right {
+    display: none;
+  }
+  #filters {
+    width: 100%;
+    max-width: 355px;
+    top: 150px;
+    height: calc(100% - 300px);
+    z-index: 10;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.65s ease-out;
+    transition: -webkit-transform 0.65s ease-out;
+    transition: transform 0.65s ease-out;
+    transition: transform 0.65s ease-out, -webkit-transform 0.65s ease-out;
+  }
+  #filters .filters-close-btn {
+    display: inline-block;
+  }
+  div.filters-open {
+    display: inline-block;
+  }
+  .filters-open-btn {
+    display: inline-block;
+  }
+  #intro {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #intro-text {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  #company-details {
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #vehicles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #vehicles #zero-results-returned {
+    left: 0;
+  }
+  #vehicles #zero-results-returned #sad-face {
+    width: 250px;
+    height: 250px;
+  }
+  #vehicles #zero-results-returned-text {
+    position: relative;
+    width: 75%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 1.7rem;
+    padding: 1.5rem 0;
+    margin-bottom: 35%;
+  }
+  #vehicles .vehicle-card {
+    width: 100%;
+  }
+  #vehicles .vehicle-card #cars {
+    height: 250px;
+  }
+  #vehicles .vehicle-card h4 {
+    font-size: 1.6rem;
+  }
+  #vehicles .vehicle-card h5 {
+    font-size: 2rem;
+  }
+  #vehicles .vehicle-card h6 {
+    font-size: 1.7rem;
+  }
+  #vehicles .vehicle-card ul > li {
+    font-size: 0.9rem;
+  }
+  #outro {
+    width: 95%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+  }
+  #outro-text {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  #footer {
+    height: 150px;
+  }
+  #footer > span {
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #footer #social-icons {
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 10px;
+    width: 100%;
+  }
+  #footer #social-icons svg {
+    font-size: 2.2rem;
+  }
+}

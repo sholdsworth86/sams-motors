@@ -1,0 +1,7 @@
+//Define the necessary pre-sets for Babel
+{
+  "presets": [
+    "env",
+    "react"
+  ]
+}
